@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>Piracicaba</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">PIRACICABA</h1>
+    </header>
+
+    <div class="media-picture"></div>
+
+    <main class="content">
+        <section class="content__text">
+            <p>Piracicaba, uma cidade do interior de São Paulo, conta com <b>407 mil habitantes</b> - sendo a <b>17ª cidade mais populosa do estado</b>.</p>
+
+            <p>Cheia de encantos, Piracicaba é conhecida pelo <b>Rio Piracicaba</b>, que passa pelo meio da cidade.</p>
+        </section>
+        
+        <section class="content__video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/Hcv7kbonLhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="content__list">
+            <h2 class="content__subtitle">CURIOSIDADES</h2>
+            <ul>
+                <li>
+                    🐟 "Lugar onde o peixe para": o nome da cidade tem origem tupi e a união dos termo pirá (peixe), syk (parar) e aba (lugar) é 
+                    uma referência ao Rio Piracicaba - com as quedas d'água, o rio bloqueia a migração dos peixes.
+                </li>
+                <li>
+                    😂 Capital Mundial do Humor: desde 1974, Piracicaba realiza o Salão Internacional de Humor - festival de humor gráfico.
+                </li>
+                <li>
+                    📓 Vocabulário próprio: O jeito de falar do piracicabano é tão único que até mesmo ganhou um "dicionário do dialeto caipiracicabano" - escrito pelo jornalista Cecílio Elias Netto.
+                </li>
+            </ul>
+        </section>
+
+        <div class="form"><h3>ENTRE EM CONTATO</h3></div>
+
+    <p class="texto">Preencha os campos abaixo que entraremos em contato em até 24 horas.</div>
+        <p class="obrigatorio">
+            *Campos com preenchimento obrigatório</div>
+               
+    <form action="/registro" method="POST">
+
+        <div><label for="nome">Nome*</label>
+        <input type="nome" maxlength="100" name="nome" id="nome" class="texto_form" required></div>
+    
+        <div><label for="email">E-mail*</label>
+        <input type="email" name="email" id="email" class="texto_form" required></div>
+        
+        <div><label for="telefone">Telefone*</label>
+        <input type="tel" name="telefone" id="telefone" class="texto_form" required></div>
+        
+        <div><label for="telefone">Data de nascimento*</label>
+        <input type="date" name="data" id="nascimento" class="estilo" required></div>
+        
+        <div><label>Você é maior de 18 anos?*</label>
+            <select name="idade" class="estilo" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select></div>
+
+        <fieldset class="fieldset-interesse" class="estilo" required>
+            <legend>Qual ponto turístico você quer conhecer?*</legend>
+            <p>
+                <input type="radio" id="engenho" name="fav_place" value="engenho" required>
+                <label for="engenho">Engenho Central</label><br>
+               
+                <input type="radio" id="ruadoporto" name="fav_place" value="ruadoporto" required>
+                <label for="ruadoporto">Rua do Porto</label><br>
+
+                <input type="radio" id="esalq" name="fav_place" value="esalq" required>
+                <label for="esalq">ESALQ</label><br>
+
+                <input type="radio" id="montealegre" name="fav_place" value="montealegre" required>
+                <label for="montealegre">Monte Alegre</label><br>
+
+                <input type="radio" id="lagoa" name="fav_place" value="lagoa" required>
+                <label for="lagoa">Lagoa - Santa Rita</label><br>
+
+                <input type="radio" id="mirante" name="fav_place" value="mirante" required>
+                <label for="mirante">Mirante</label><br>
+
+            </p>
+            </fieldset>
+
+        <fieldset  class="fieldset-objetivo estilo">
+            <legend>Qual seu objetivo em Piracicaba?</legend>
+            <p>
+                <input type="checkbox" id="residente" name="residente" value="residente">
+                <label for="check">Sou residente</label>
+                
+                <input type="checkbox" id="estudante" name="estudante" value="estudante">
+                <label for="check">Sou estudante</label>   
+                
+                <input type="checkbox" id="turista" name="turista" value="turista">
+                <label for="check">Sou turista</label>
+               
+            </p>
+            </fieldset>
+
+        <button type="reset" class="botao">Limpar dados</button>
+        <button type="submit" class="botao">Enviar</button>
+
+
+    </form>
+
+        <footer class="footer">
+            <a href="https://www.instagram.com/prefeituradepiracicaba/"><img src="instagram.png" class="social" title="Instagram Prefeitura de Piracicaba"></a>
+            <a href="https://www.youtube.com/channel/UC3Acrecu1jD9vHMxBufufyQ"> <img src="youtube.png" class="social" title="Youtube Prefeitura de Piracicaba"></a>
+        </footer>
+   
+    </main>
+
+</body>
+</html>
